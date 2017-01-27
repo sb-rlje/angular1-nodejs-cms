@@ -1,0 +1,57 @@
+<h3 class="text-center">Which training package would you like?</h3>
+<div class="form-group radios-md row">
+    <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-show="training.type == 'private'">
+        <label>
+           <a ui-sref="training.location"><input type="radio" ng-model="training.session" value="4 Private Sessions" checked></a>
+           4 Private Training Sessions
+        </label>
+    </div>
+    <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-show="training.type == 'private'">
+        <label>
+            <a ui-sref="training.location"><input type="radio" ng-model="training.session" value="8 Private Sessions"></a>
+            8 Private Training Sessions
+        </label>
+    </div>
+    <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-show="training.type == 'private'">
+        <label>
+            <a ui-sref="training.location"><input type="radio" ng-model="training.session" value="1 Private Session (Football)"></a>
+            Single Private Training Session (Football)
+        </label>
+    </div>
+    <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-show="training.type == 'private' || training.type == 'soccer'">
+        <label>
+            <a ui-sref="training.location"><input type="radio" ng-model="training.session" value="1 Private Session (Soccer)"></a>
+            Single Private Training Session (Soccer)
+        </label>
+    </div>
+    <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-show="training.type == 'private' || training.type == 'speed'">
+        <label>
+            <a ui-sref="training.location"><input type="radio" ng-model="training.session" value="1 Private Session (Speed)"></a>
+            Single Private Training Session (Speed)
+        </label>
+    </div>
+    <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-show="training.type == 'soccer'">
+        <label>
+           <a ui-sref="training.location"><input type="radio" ng-model="training.session" value="Drop-In (Soccer)" checked></a>
+           Octane Soccer Training Drop-In
+        </label>
+    </div>
+    <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-show="training.type == 'speed'">
+        <label>
+           <a ui-sref="training.location"><input type="radio" ng-model="training.session" value="Drop-In (Speed & Agility)" checked></a>
+           Octane Speed &amp; Agility Training Drop-In
+        </label>
+    </div>
+    <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-show="training.type == 'fitness'">
+        <label>
+           <a ui-sref="training.location"><input type="radio" ng-model="training.session" value="Drop-In (Adult Fitness)" checked></a>
+           Adult Fitness Training Drop-In
+        </label>
+    </div>
+</div>
+
+<div class="form-group options row text-center">
+<div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="register.type" class="btn btn-block btn-info">Back</a>
+</div>
+</div>

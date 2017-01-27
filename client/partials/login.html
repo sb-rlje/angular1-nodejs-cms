@@ -1,0 +1,19 @@
+<h3 class="text-center">Account Login</h3>
+<div class="fields-lg">
+	<div class="form-group col-xs-6 col-xs-offset-3">
+		<label for="email">Username</label> 
+		<input type="text" class="form-control" name="username" placeholder="Username" ng-model="user.username">
+	</div>
+
+	<div class="form-group col-xs-6 col-xs-offset-3">
+		<label for="email">Password</label> 
+		<input type="text" class="form-control" name="password" placeholder="Password" ng-model="user.password">
+	</div>
+</div>
+
+<div class="form-group options row text-center">
+	<div class="col-xs-6 col-xs-offset-3">
+	    <button type="submit" class="btn btn-danger" ng-click="addUser()">Submit</button>
+	</div>
+</div>
+

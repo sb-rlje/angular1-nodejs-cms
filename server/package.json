@@ -1,0 +1,33 @@
+{
+  "name": "octane",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcrypt": "*",
+    "bcryptjs": "^2.3.0",
+    "body-parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-local": "*"
+  },
+  "description": "first app",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "brand engage",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "coming-soon"
+  },
+  "keywords": [
+    "hello",
+    "world"
+  ]
+}

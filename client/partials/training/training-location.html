@@ -1,0 +1,27 @@
+<h3 class="text-center">Where do you want to train?</h3>
+<div class="form-group radios-md row">
+    <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-show="training.type == 'soccer'">
+        <label>
+           <a ui-sref="training.register"><input type="radio" ng-model="training.location" value="4S Ranch Sports Park" checked></a>
+           4S Ranch Sports Park
+        </label>
+    </div>
+    <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-show="training.type == 'private' || training.type == 'fitness'">
+        <label>
+            <a ui-sref="training.register"><input type="radio" ng-model="training.location" value="Canyonside Community Park"></a>
+            Canyonside Community Park
+        </label>
+    </div>
+    <div class="radio col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-show="training.type == 'speed' || training.type == 'soccer'">
+        <label>
+            <a ui-sref="training.register"><input type="radio" ng-model="training.location" value="Black Mountain Ranch Park"></a>
+            Black Mountain Ranch Park
+        </label>
+    </div>
+</div>
+
+<div class="form-group options row text-center">
+<div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="register.session" class="btn btn-block btn-info">Back</a>
+</div>
+</div>
